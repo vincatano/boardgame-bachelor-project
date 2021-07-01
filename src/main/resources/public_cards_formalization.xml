@@ -1,0 +1,132 @@
+<PUBLICARDS>
+	<CARD>
+		<NUMBER>1</NUMBER>
+		<NAME>Colori diversi - Riga</NAME>
+		<DESCRIPTION>Riga senza colori ripetuti</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>6</POINTS>
+		<RULES>
+			<WHERE>ROW</WHERE>
+			<PROP>NOCOLOR</PROP>
+			<VALUES>-</VALUES>
+			<COLOUR>-</COLOUR>
+		</RULES>
+	</CARD>
+	<CARD>
+		<NUMBER>2</NUMBER>
+		<NAME>Colori diversi - Colonna</NAME>
+		<DESCRIPTION>Colonne senza colori ripetuti</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>5</POINTS>
+		<RULES>
+			<WHERE>COLUMN</WHERE>
+			<PROP>NOCOLOR</PROP>
+			<VALUES>-</VALUES>
+			<COLOUR>-</COLOUR>
+		</RULES>
+	</CARD>
+	<CARD>
+		<NUMBER>3</NUMBER>
+		<NAME>Sfumature diverse - Riga</NAME>
+		<DESCRIPTION>Righe senza sfumature ripetute</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>5</POINTS>
+		<RULES>
+			<WHERE>ROW</WHERE>
+			<PROP>NOVALUE</PROP>
+			<VALUES>-</VALUES>
+			<COLOUR>-</COLOUR>
+		</RULES>
+	</CARD>
+	<CARD>
+		<NUMBER>4</NUMBER>
+		<NAME>Sfumature diverse - Colonna</NAME>
+		<DESCRIPTION>Colonne senza sfumature ripetute</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>4</POINTS>
+		<RULES>
+			<WHERE>COLUMN</WHERE>
+			<PROP>NOVALUE</PROP>
+			<VALUES>-</VALUES>
+			<COLOUR>-</COLOUR>
+		</RULES>
+	</CARD>
+	<CARD>
+		<NUMBER>5</NUMBER>
+		<NAME>Sfumature chiare</NAME>
+		<DESCRIPTION>Set di 1 &amp; 2 ovunque</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>2</POINTS>
+		<RULES>
+			<WHERE>-</WHERE>
+			<PROP>-</PROP>
+			<VALUES>1,2</VALUES>
+			<COLOUR>-</COLOUR>
+		</RULES>
+	</CARD>
+	<CARD>
+		<NUMBER>6</NUMBER>
+		<NAME>Sfumature medie</NAME>
+		<DESCRIPTION>Set di 3 &amp; 4 ovunque</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>2</POINTS>
+		<RULES>
+			<WHERE>-</WHERE>
+			<PROP>-</PROP>
+			<VALUES>3,4</VALUES>
+			<COLOUR>-</COLOUR>
+		</RULES>
+	</CARD>
+	<CARD>
+		<NUMBER>7</NUMBER>
+		<NAME>Sfumature scure</NAME>
+		<DESCRIPTION>Set di 5 &amp; 6 ovunque</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>2</POINTS>
+		<RULES>
+			<WHERE>-</WHERE>
+			<PROP>-</PROP>
+			<VALUES>5,6</VALUES>
+			<COLOUR>-</COLOUR>
+		</RULES>
+	</CARD>
+	<CARD>
+		<NUMBER>8</NUMBER>
+		<NAME>Sfumature diverse</NAME>
+		<DESCRIPTION>Set di dadi di ogni valore ovunque</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>5</POINTS>
+		<RULES>
+			<WHERE>-</WHERE>
+			<PROP>-</PROP>
+			<VALUES>1,2,3,4,5,6</VALUES>
+			<COLOUR>-</COLOUR>
+		</RULES>
+	</CARD>
+	<CARD>
+		<NUMBER>9</NUMBER>
+		<NAME>Diagonali colorate</NAME>
+		<DESCRIPTION>Numero di dadi dello stesso colore diagonalmente adiacenti</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>#</POINTS>
+		<RULES>
+			<WHERE>DIAGONAL</WHERE>
+			<PROP>COLOR</PROP>
+			<VALUES>-</VALUES>
+			<COLOUR>-</COLOUR>
+		</RULES>
+	</CARD>
+	<CARD>
+		<NUMBER>10</NUMBER>
+		<NAME>Varietà di colore</NAME>
+		<DESCRIPTION>Set di dadi di ogni colore ovunque</DESCRIPTION>
+		<TYPE>Public</TYPE>
+		<POINTS>4</POINTS>
+		<RULES>
+			<WHERE>-</WHERE>
+			<PROP>-</PROP>
+			<VALUES>-</VALUES>
+			<COLOUR>Y,G,B,P,R</COLOUR>
+		</RULES>
+	</CARD>
+</PUBLICARDS>

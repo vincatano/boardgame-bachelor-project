@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #a0a2ab;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.view.gui.guicontrollers.ScoreViewController">
+   <children>
+      <AnchorPane prefHeight="156.0" prefWidth="1000.0" style="-fx-background-color: #2D3647;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="93.0" prefWidth="385.0" text="Punteggio giocatori" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="64.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#3c58fa" />
+                        <Stop color="#aba2a2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="426.0" layoutY="610.0" onMouseClicked="#handleMouseClicked" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #3C58FA;" text="Gioca ancora" textFill="#dbdce4">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <TableView fx:id="scoreTable" layoutX="232.0" layoutY="270.0" prefHeight="310.0" prefWidth="538.0">
+        <columns>
+          <TableColumn fx:id="playerColumn" prefWidth="268.0" text="Giocatore" />
+          <TableColumn fx:id="scoreColumn" prefWidth="265.0" text="Punteggio" />
+        </columns>
+      </TableView>
+      <Label fx:id="announcementLabel" alignment="CENTER" layoutY="165.0" prefHeight="93.0" prefWidth="441.0" textFill="#110000" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

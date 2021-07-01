@@ -1,0 +1,1 @@
+java -jar client.jar --cli -a 192.168.1.79
