@@ -1,1 +1,1 @@
-java -jar client.jar --gui -a 192.168.1.79
+java -jar client.jar --gui -a 127.0.0.1

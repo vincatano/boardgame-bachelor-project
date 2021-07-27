@@ -1,1 +1,1 @@
-java -jar server.jar --timerRoom 30 --timerCard 20 --timerMove 100
+java -jar server.jar --timerRoom 10 --timerCard 20 --timerMove 100

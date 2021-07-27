@@ -9,9 +9,9 @@ import javafx.scene.image.ImageView;
 public class ViewDice {
     private static final int COLOR_INDEX = 0;
     private static final int NUMBER_INDEX = 1;
-    private ImageView image;
-    private char color;
-    private char number;
+    private final ImageView image;
+    private final char color;
+    private final char number;
 
     /**
      * Classic constructor
