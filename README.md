@@ -1,15 +1,27 @@
-# ProgettoIngSw
-Team components:
+# Vincenzo Catano
+## Digital version of the board game "Sagrada" - Bachelor of Science project thesis
+This project was developed by a team of three as a part of the thesis for the Bachelor of Science in Computer Science Engineering @ Politecnico di Milano. The project aimed at developing the digital version of an existing board game called "Sagrada" (http://www.craniocreations.it/prodotto/sagrada/). The game allows to play from a GUI and also the Command Line, allowing also to play with two different network options (Socket and RMI).
 
-Alessandrelli Luca 10533904
+- Describe your role in the project
+My main focus during the project was on the model of the game, the tests and the Command Line visualization of the game. I also formalized the rules of the cards so that we wouldn't need to hard-code them. We as a team decided to don't have a single project manager but we decided that we were all on the same level of decision making.
 
-Caldarola Giovanni 10520479
+- What you personally learned from it
+Thanks to this project I learned a lot. Firstly, I learned how to organize the work to arrive to a goal, how to work in team, dividing the work and trusting others doing their job. I also learned how to be independent and autonomous while doing my job and to manage the time because we had to do also exams during the development of the game. On the technical part I learned a lot about Java and how to use it to create a big project. Also, noticing that the idea to formalize in XML the rules of the cards of the game, I understood that good and efficient code might take more time to write but it will save you even more time in the end.
 
-Catano Vincenzo 10520959
+- Why you think this particular code sample demonstrates the highlight of your skillset
+The code that I wrote during this project is, in my opinion, simple and efficient. As stated before, the use of formalized rules helped us a lot during the project in developing faster different cards and made it more reusable in case some other cards (DLC in example) with different consequences but equal rules wanted to be added. 
 
+Below you can find some of the Project Choises that we made during the development of the code:
 
-Description of the project: the project is based on the realization of the digital version of the board game "Sagrada".
-Implemented requirements: Complete Rules + CLI(it's not fully tested) + GUI + RMI + Socket + MultiMatch
+1) We adopted the MVC pattern.
+2) We decided to have a centralized architecture to avoid duplicated data.
+3) We chose to represent ObjectiveCards, ToolCards and WindowPatternCards in a XML format, this way we avoid hard coding information inside Classes.
+4) In order to implement game turns and to control the player's moves flow we decided to use the state pattern, creating a finite state machine.
+5) ToolCards have different effects on a player's move but most of the time they have little similarities. We decided to decompose these effects in minor moves (ex: selecting a dice that belongs to the RoundTrack) and formalize them in the ToolCard xml file. Using JavaReflection we analyze each move dynamically, avoiding to write 12 toolcard classes with effects in common.  
+6) We decided to implement a VirtualView in order to process events coming from the model and forward them to the client through the network.
+7) All messages that pass through the network are strings, this way knowing the protocol adopted, the client application is language independent.
+
+Here instead are some of the commands useful to run the game.
 
 COMMAND LINE PARAMETERS FOR THE CLIENT
 1) "-a serverAddress" (Default: localhost).
@@ -21,12 +33,5 @@ COMMAND LINE PARAMETERS FOR THE SERVER
 2) "-timerCard" timer for the patternCard choice (Default : timerCard=10).
 3) "-timerMove" player move's timer (Default : timerCard=30.
 
-PROJECT CHOICES
 
-1) We adopted the pattern MVC.
-2) We decided to have a centralized architecture to avoid duplicated data.
-3) We chose to represent ObjectiveCards, ToolCards and WindowPatternCards in a XML format, this way we avoid hard coding information inside Classes.
-4) In order to implement game turns and to control the player's moves flow we decided to use the state pattern, creating a finite state machine.
-5) ToolCards have different effects on a player's move but most of the time they have little similarities. We decided to decompose these effects in minor moves (ex: selecting a dice that belongs to the RoundTrack) and formalize them in the ToolCard xml file. Using JavaReflection we analyze each move dynamically, avoiding to write 12 toolcard classes with effects in common.  
-6) We decided to implement a VirtualView in order to process events coming from the model and forward them to the client through the network.
-7) All messages that pass through the network are strings, this way knowing the protocol adopted, the client application is language independent.
+Point of attention: if you run the game you might find different images for the GUI from the one that are uploaded in the resources. This is because, to make this code public, I had to replace the original images with new ones. I also decided to leave the original ones in the game since they fit better in the overall graphics of the game.
