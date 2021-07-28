@@ -1,6 +1,6 @@
 # Vincenzo Catano
 ## Digital version of the board game "Sagrada" - Bachelor of Science project thesis
-This project was developed by a team of three as a part of the thesis for the Bachelor of Science in Computer Science Engineering @ Politecnico di Milano. The project aimed at developing the digital version of an existing board game called "Sagrada" (http://www.craniocreations.it/prodotto/sagrada/). The game allows to play from a GUI and also the Command Line, allowing also to play with two different network options (Socket and RMI).
+This project was developed by a team of three as a part of the thesis for the Bachelor of Science in Computer Science Engineering @ Politecnico di Milano. The project aimed at developing the digital version of an existing board game called "Sagrada" (http://www.craniocreations.it/prodotto/sagrada/). The digital version allows you to play it through the GUI or the Command Line, allowing also to play with two different network options (Socket and RMI).
 
 ### Describe your role in the project
 My main focus during the project was on the model of the game, the tests and the Command Line visualization of the game. I also formalized the rules of the cards so that we wouldn't need to hard-code them. We as a team decided to don't have a single project manager but we decided that we were all on the same level of decision making.
