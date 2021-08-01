@@ -1,6 +1,6 @@
 # Vincenzo Catano
 ## Digital version of the board game "Sagrada" - Bachelor of Science project thesis
-This project was developed by a team of three as a part of the thesis for the Bachelor of Science in Computer Science Engineering @ Politecnico di Milano. The project aimed at developing the digital version of an existing board game called "Sagrada" (http://www.craniocreations.it/prodotto/sagrada/). The digital version allows you to play it through the GUI or the Command Line, allowing also to play with two different network options (Socket and RMI).
+This project was developed by a team of three as a part of the thesis for the Bachelor of Science in Computer Science Engineering @ Politecnico di Milano. The project aimed at developing the digital version of an existing board game called ["Sagrada"](http://www.craniocreations.it/prodotto/sagrada/). The digital version allows you to play it through the GUI or the Command Line, allowing also to play with two different network options (Socket and RMI).
 
 ### Describe your role in the project
 My main focus during the project was on the model of the game, particularly the [gamedata](https://github.com/vincatano/boardgame-bachelor-project/tree/src/main/java/it/polimi/ingsw/model/gamedata), the [tests](https://github.com/vincatano/boardgame-bachelor-project/tree/src/test/java/it/polimi/ingsw) and the [Command Line visualization](https://github.com/vincatano/boardgame-bachelor-project/tree/src/main/java/it/polimi/ingsw/view/cli) of the game. I also formalized the rules of the cards so that we wouldn't need to hard-code them. We as a team decided to don't have a single project manager but we decided that we were all on the same level of decision making.
@@ -14,7 +14,7 @@ The code that I wrote during this project is, in my opinion, simple and efficien
 ### Additional information
 Below you can find some of the Project Choices that we made during the development of the code:
 
-1) We adopted the MVC pattern.
+1) We adopted the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) pattern.
 2) We decided to have a centralized architecture to avoid duplicated data.
 3) We chose to represent ObjectiveCards, ToolCards and WindowPatternCards in an XML format, this way we avoid hard coding information inside Classes.
 4) To implement game turns and to control the player's moves flow we decided to use the state pattern, creating a finite state machine.
