@@ -16,11 +16,11 @@ Below you can find some of the Project Choices that we made during the developme
 
 1) We adopted the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) pattern.
 2) We decided to have a centralized architecture to avoid duplicated data.
-3) We chose to represent ObjectiveCards, ToolCards and WindowPatternCards in an XML format, this way we avoid hard coding information inside Classes.
-4) To implement game turns and to control the player's moves flow we decided to use the state pattern, creating a finite state machine.
+3) We chose to represent ObjectiveCards ([Public Cards](https://github.com/vincatano/boardgame-bachelor-project/blob/main/src/main/resources/public_cards_formalization.xml) and [Private Cards](https://github.com/vincatano/boardgame-bachelor-project/blob/main/src/main/resources/private_cards_formalization.xml), [ToolCards](https://github.com/vincatano/boardgame-bachelor-project/blob/main/src/main/resources/tool_cards_formalization.xml) and [WindowPatternCards](https://github.com/vincatano/boardgame-bachelor-project/blob/main/src/main/resources/window_pattern_cards_formalization.xml) in an XML format, this way we avoid hard coding information inside Classes.
+4) To implement game turns and to control the player's moves flow we decided to use the state pattern, creating a [finite state machine](https://github.com/vincatano/boardgame-bachelor-project/blob/main/Deliverables/Documentazione%20Supplementare/FSM.pdf).
 5) ToolCards have different effects on a player's move but most of the time they have few similarities. We decided to decompose these effects in minor moves (ex: selecting a dice that belongs to the RoundTrack) and formalize them in the ToolCard XML file. Using JavaReflection we analyze each move dynamically, avoiding writing 12 toolcard classes with effects in common.  
 6) We decided to implement a VirtualView to process events coming from the model and forward them to the client through the network.
-7) All messages that pass through the network are strings, this way knowing the protocol adopted, the client application is language independent.
+7) [All messages](https://github.com/vincatano/boardgame-bachelor-project/blob/main/Deliverables/Documentazione%20Supplementare/Struttura%20Messaggi%20client-server.pdf) that pass through the network are strings, this way knowing the protocol adopted, the client application is language independent.
 
 Here instead are some of the commands useful to run the game.
 
