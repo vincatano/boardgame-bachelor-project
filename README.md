@@ -11,6 +11,8 @@ Thanks to this project I learned a lot. First of all, I learned how to organize 
 ### Why you think this particular code sample demonstrates the highlight of your skillset
 The code that I wrote during this project is, in my opinion, simple and efficient. As stated before, the use of formalized rules helped us a lot during the project in developing faster different cards and made them more reusable in case some other cards (DLC for example) with different consequences but equal rules wanted to be added. 
 
+[THIS IS A TEST](../src/main/java/it/polimi/ingsw/model/gamedata/Colour.java)
+
 ### Additional information
 Below you can find some of the Project Choices that we made during the development of the code:
 
