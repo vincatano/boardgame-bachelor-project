@@ -1,17 +1,17 @@
 # Vincenzo Catano
-## Digital version of the board game "Sagrada" - Bachelor of Science project thesis
+## 1. Digital version of the board game "Sagrada" - Bachelor of Science project thesis
 This project was developed by a team of three as part of my thesis for the Bachelor of Science in Computer Science Engineering @ Politecnico di Milano. **This repository is a copy of the original repository that cannot be shown publicly due to copyright issues.** The project aimed at developing the digital version of an existing board game called ["Sagrada"](http://www.craniocreations.it/prodotto/sagrada/). The digital version allows you to play it through the GUI or the Command Line, allowing also to play with two different network options (Socket and RMI).
 
-### Describe your role in the project
-My main focus during the project was on the model of the game, particularly the [gamedata](https://github.com/vincatano/boardgame-bachelor-project/tree/main/src/main/java/it/polimi/ingsw/model/gamedata), the [tests](https://github.com/vincatano/boardgame-bachelor-project/tree/main/src/test/java/it/polimi/ingsw) and the [Command Line visualization](https://github.com/vincatano/boardgame-bachelor-project/tree/main/src/main/java/it/polimi/ingsw/view/cli) of the game. I also formalized the rules of the cards so that we wouldn't need to hard-code them.
+### 1.1 Describe your role in the project
+My main focus during the project was on the model of the game, particularly the [gamedata](https://github.com/vincatano/boardgame-bachelor-project/tree/main/src/main/java/it/polimi/ingsw/model/gamedata), the [tests](https://github.com/vincatano/boardgame-bachelor-project/tree/main/src/test/java/it/polimi/ingsw), the [Command Line visualization](https://github.com/vincatano/boardgame-bachelor-project/tree/main/src/main/java/it/polimi/ingsw/view/cli) of the game and the formalization of the cards in XML (*see point 3 of the 1.4 paragraph*). I also formalized the rules of the cards so that we wouldn't need to hard-code them.
 
-### What you personally learned from it
+### 1.2 What you personally learned from it
 Thanks to this project I learned a lot. First, I learned how much organizing tasks is important: without a proper plan, it is really difficult to do everything on time and reach a target. Secondly, I worked in a team for the first time, which gave me the chance to understand how to divide the work among teammates and to trust others to do their job as planned. I also learned how to be independent and autonomous while doing my job and to manage the time because we had to do also exams during the development of the game. On the technical side, I learned a lot about Java, XML and Version Control (Git) and how to use them to develop a big project. Also, when formalizing the rules of the cards in XML, I learned that writing a good and efficient code may take time at the beginning of the activities, but it will save much more time afterwards
 
-### Why you think this particular code sample demonstrates the highlight of your skillset
+### 1.3 Why you think this particular code sample demonstrates the highlight of your skillset
 The code that I wrote during this project is, in my opinion, simple and efficient. As stated before, the use of formalized rules helped us a lot during the project in developing faster different cards and made them more reusable in case some other cards (DLC for example) with different consequences but equal rules wanted to be added. 
 
-### Additional information
+### 1.4 Additional information
 Below you can find some of the Project Choices that we made during the development of the code:
 
 1) We adopted the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) pattern.
